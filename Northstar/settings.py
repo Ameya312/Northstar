@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'cafe',
     'rest_framework',
     'corsheaders',
+    'rest_framework_swagger',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +73,9 @@ TEMPLATES = [
     },
 ]
 
+REST_FRAMEWORK = {'DEFAULT_SCHEMA_CLASS':'rest_framework.schemas.coreapi.AutoSchema' }
+
+
 WSGI_APPLICATION = 'Northstar.wsgi.application'
 
 
@@ -80,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Northstar_project',
-        'USER': 'root',
-        'PASSWORD': 'Admin',
+        'USER': 'testuser',
+        'PASSWORD': 'TestPwd@123',
     }
 }
 

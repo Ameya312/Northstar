@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+Django = "==3.1.2"
+django-cors-headers = "~=3.1.1"
+djangorestframework = "==3.12.1"
+pymysql = "*"
+mysqlclient = "==2.0.2"
+django-rest-swagger = "*"
+drf-yasg = "*"
+
+[requires]
+python_version = "3.8"
